@@ -4,9 +4,6 @@ Lightweight, scalable microservice serving a growing [ecommerce front-end](https
 
 ## Contents
 
-- [Contributing](CONTRIBUTING.md)
-- [Using the API](docs/API-usage.md)
-- [Deploying to AWS](docs/Deployment.md)
 - [Tech Stack](#tech-stack)
 - [System Architecture](#system-architecture)
 
@@ -33,4 +30,10 @@ Lightweight, scalable microservice serving a growing [ecommerce front-end](https
 ---
 
 ### System Architecture
+Phase 1 - Phase 1 is most optimal between 1 - 2000 concurrent users. This design aim to minimize the server cost by horizontally scaling.
 
+![](https://i.imgur.com/mGDWrVG.png)
+
+Phase 2 - Phase 2 system design aims to handle above 2000 concurrent users. As the user base increases, the stress on the database dramatically increases. In order to handle the stress, load balancer, memory cache, vertically scaling and sharding will be instrumental in the efficiency of the queries. Vertically scaling a server will be cost intensive.
+
+![](https://i.imgur.com/o0OkDyu.png)
