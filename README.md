@@ -34,4 +34,3 @@ Lightweight, scalable microservice serving a growing [ecommerce front-end](https
 
 ### System Architecture
 
-![System Architecture](docs/img/architecture.png)
